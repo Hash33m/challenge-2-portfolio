@@ -1,14 +1,38 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
-  font-family: 'Courier New', Courier, monospace;
   margin: 0;
 }
 
-main {
+nav {
   display: flex;
-  flex-wrap: flex;
-  margin-top: 2%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #eee;
 }
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.header img {
+  margin-left: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about,
+.work {
+  flex-basis: 50%;
+  padding: 20px;
+}
+
